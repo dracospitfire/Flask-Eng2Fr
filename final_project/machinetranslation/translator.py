@@ -8,8 +8,8 @@ load_dotenv()
 
 apikey = os.environ['apikey']
 url = os.environ['url']
-myAuthenticator = IAMAuthenticator(apikey)
 
+myAuthenticator = IAMAuthenticator(apikey)
 language_translator = LanguageTranslatorV3(version = '2018-05-01', authenticator = myAuthenticator)
 language_translator.set_service_url(url)
 

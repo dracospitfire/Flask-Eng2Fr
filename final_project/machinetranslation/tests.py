@@ -15,5 +15,5 @@ class TestFr2Eng(unittest.TestCase):
              #test case for the word "Bonjour", shold translate to Hello
           self.assertNotEqual(frenchToEnglish('Bonjour'), 'Bonjour')
             #test case for the word "Bonjour", function shold not return Bonjour
-
+            
 unittest.main()
