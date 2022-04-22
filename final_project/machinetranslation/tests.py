@@ -10,7 +10,7 @@ class TestEng2Fr(unittest.TestCase):
             #test case for the world Hello, shold translate to Bonjour
 
 class TestFr2Eng(unittest.TestCase):
-     def test1(self):
+     def test2(self):
           self.assertEqual(frenchToEnglish('Bonjour'), 'Hello')
              #test case for the world Bonjour, shold translate to Hello
           self.assertNotEqual(frenchToEnglish('Bonjour'), 'Bonjour')
