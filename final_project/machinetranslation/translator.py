@@ -13,14 +13,14 @@ myAuthenticator = IAMAuthenticator(apikey)
 language_translator = LanguageTranslatorV3(version = '2018-05-01', authenticator = myAuthenticator)
 language_translator.set_service_url(url)
 
-def english_2_french(english_text):
+def englishToFrench(english_text):
     """This function takes English text and translates it to French."""
     translation_response = language_translator.translate(text = english_text, model_id = 'en-fr')
     translation = translation_response.get_result()
     french_text = translation['translations'][0]['translation']
     return french_text
 
-def french_2_english(french_text):
+def frenchToEnglish(french_text):
     """This function takes French text and translates it to English."""
     translation_response = language_translator.translate(text = french_text, model_id='fr-en')
     translation=translation_response.get_result()
