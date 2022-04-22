@@ -19,3 +19,10 @@ def englishToFrench(englishText):
     translation=translation_response.get_result()
     frenchText =translation['translations'][0]['translation']
     return frenchText
+
+def frenchToEnglish(frenchText):
+    #This function takes French text and translates it to English. 
+    translation_response = language_translator.translate(text=frenchText, model_id='en-fr')
+    translation=translation_response.get_result()
+    frenchText =translation['translations'][0]['translation']
+    return englishText
